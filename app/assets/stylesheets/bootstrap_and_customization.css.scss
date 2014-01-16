@@ -1,1 +1,52 @@
 @import 'bootstrap';
+
+.navbar-footer {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #e7e7e7;
+	background-color: #DD5A3E;
+	color: #ffffff
+}
+
+.navbar-default .navbar-brand {
+color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: #ffffff;
+}
+
+.navbar-right {
+	padding-right: 20px;
+}
+
+.jumbotron {
+	height: 600px;
+	background-color: #DD5A3E;
+	color: #ffffff;
+	margin-bottom: 0px;
+
+}
+
+body {
+    padding-bottom: 50px; /* Whatever the height of your navbar is; the
+                             default is 50px */
+}
+
+.navbar-default {
+background-color: #DD5A3E;
+border-color: #e7e7e7;
+}
+
+.btn-primary {
+	color: white;
+	background-color: #3C997D;
+	border-color: #3C997D;
+		&:hover { 
+			background-color: #F5CF4A;
+			border-color: #F5CF4A;
+			color: #4B545A;
+			}
+}
