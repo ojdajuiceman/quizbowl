@@ -15,4 +15,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require underscore
+//= require backbone
+//= require feedback
 //= require_tree .
+//= require backbone-mixpanel
