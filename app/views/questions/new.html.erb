@@ -1,0 +1,6 @@
+<%= form_for @question do |q| %>
+  <p> Question: <%= q.text_field :question %></p>
+  <p> Answers: <%= q.text_field :choices  %></p>
+  <p> Correct Answer: <%= q.text_field :correct_index  %></p>
+  <%= q.submit "Save" %>
+<% end %>
