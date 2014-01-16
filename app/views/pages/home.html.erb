@@ -3,14 +3,19 @@
 
   <h1>kwizbowl</h1>
   <h6> POWERED BY HUTDUG</h6>
-  <p class ="lead">
-    a bowl of kwiz
-  </p>
+  <p class ="lead">a bowl of kwiz</p>
+
+  <p>Question #<%= @questions.find(2).id %>:</p>
+  <p><%= @questions.find(2).question %></p>
+  <p><%= @questions.find(2).choices.join(", ") %></p>
+
+
+
 
   
   <% if user_signed_in? %>
   <% else %>
-  <p>
+    <p>
       <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
     </p>
