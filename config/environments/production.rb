@@ -77,4 +77,6 @@ Quizbowl::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  #make sure you update this with hutdug
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

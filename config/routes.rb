@@ -1,4 +1,5 @@
 Quizbowl::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "credits" => "pages#credits"
   get "leaderboard" => "pages#leaderboard"
