@@ -1,8 +1,8 @@
 Quizbowl::Application.routes.draw do
   devise_for :users
   root "pages#home"
-  get "credits" => "pages#credits"
-  get "leaderboard" => "pages#leaderboard"
+  get "credits" => "pages#credits"#, as: "credits"
+  get "leaderboard" => "pages#leaderboard", as:"leaderboard"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
