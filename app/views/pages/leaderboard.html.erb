@@ -1,21 +1,20 @@
 <div class="container">
-<h1>Leaderboard</h1>
+<h1>Leaderboard is this real life</h1>
 	<table class="table table-striped">
+    <% @users.each do |u| %>
 		<tr>
 			<th>Full Name</th>
-      <th>Email</th>
+      <th>Email: <%=u.email%></th>
       <th>Id</th>
       <th>Username</th>
       <th>Source</th>
-      <th>Date created</th>
+      <th>Date created: <%=u.created_at%></th>
       <th>Payments</th>
       <th>Identities</th>
     </tr>
-    <% unless @questions.blank? %>
 
+    <% end %>
 
-    <%= render @questions %>
-    <%end%>
 
 	</table>
 </div>
