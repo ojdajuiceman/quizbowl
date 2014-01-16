@@ -1,9 +1,12 @@
 
 <div class ="jumbotron">
+
   <h1>kwizbowl</h1>
+  <h6> POWERED BY HUTDUG</h6>
   <p class ="lead">
     a bowl of kwiz
   </p>
+
   
   <% if user_signed_in? %>
   <% else %>
@@ -12,10 +15,12 @@
       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
     </p>
   <% end %>
+ 
 </div>
-<script>
-	widget = new Backbone.Widget.Feedback({
-		distinct_id: 656556,
-		token: 12312341241241234
-	})
-</script>
+
+
+
+
+
+
+

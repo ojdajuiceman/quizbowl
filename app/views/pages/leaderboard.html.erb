@@ -1,1 +1,21 @@
+<div class="container">
 <h1>Leaderboard</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>Full Name</th>
+      <th>Email</th>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Source</th>
+      <th>Date created</th>
+      <th>Payments</th>
+      <th>Identities</th>
+    </tr>
+    <% unless @questions.blank? %>
+
+
+    <%= render @questions %>
+    <%end%>
+
+	</table>
+</div>

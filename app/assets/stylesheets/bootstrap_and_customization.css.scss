@@ -1,5 +1,9 @@
 @import 'bootstrap';
 
+body {
+	background-color: #DD5A3E;
+}
+
 .navbar-footer {
 	color: #ffffff;
 }
@@ -23,7 +27,7 @@ color: #ffffff;
 }
 
 .jumbotron {
-	height: 600px;
+	height: 100%;
 	background-color: #DD5A3E;
 	color: #ffffff;
 	margin-bottom: 0px;
@@ -49,4 +53,8 @@ border-color: #e7e7e7;
 			border-color: #F5CF4A;
 			color: #4B545A;
 			}
+}
+
+h6, .h6 {
+font-size: 6px;
 }
